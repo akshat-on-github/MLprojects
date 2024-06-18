@@ -1,4 +1,4 @@
-# Credit Risk Modelling with XGBoost
+Credit Risk Modelling with XGBoost
 
 ## Introduction
 This project focuses on building a credit risk model using XGBoost to predict the likelihood of loan default. It involves data preprocessing, feature engineering on numerical and categorical data, model fitting, and evaluation on an unseen dataset.
