@@ -1,1 +1,41 @@
+# Credit Risk Modelling with XGBoost
 
+## Introduction
+This project focuses on building a credit risk model using XGBoost to predict the likelihood of loan default. It involves data preprocessing, feature engineering on numerical and categorical data, model fitting, and evaluation on an unseen dataset.
+
+## Steps
+
+### Data Collection
+The project uses three datasets:
+- **case_study1.xlsx**: personal data.
+- **case_study2.xlsx**: cibil data
+- **unseen_data.xlsx**: Data for evaluating model performance on new, unseen examples.
+
+### Data Preprocessing
+Initial data cleaning includes handling missing values, ensuring data types are correct, and removing or imputing any inconsistencies in the datasets.
+
+### Feature Engineering
+Feature engineering transforms raw data into features that better represent the underlying problem. Steps include:
+- Encoding categorical variables using techniques like one-hot encoding.
+- Scaling numerical features to ensure they are on a similar scale.
+- Creating new features based on domain knowledge, such as ratios or binary indicators.
+
+### Model Training
+XGBoost, a powerful gradient boosting algorithm, is used for training the model. Key activities include:
+- Splitting the training data into training and validation sets to tune and evaluate the model.
+- Performing hyperparameter tuning to optimize model performance.
+- Training the final model on the entire training dataset with the best-found parameters.
+
+### Model Evaluation
+The model's performance is evaluated on an unseen dataset to ensure it generalizes well to new data. Metrics used for evaluation include accuracy, precision, recall, F1 score, and ROC-AUC.
+
+### Final Model Testing
+After training, the final model is tested on the unseen dataset to verify its predictive accuracy. This step ensures the model's robustness and readiness for deployment.
+
+## Future Work
+- **Deployment**: Deploy the model as an API or web service for real-time predictions.
+- **Enhancements**: Improve the model by exploring additional features and advanced feature engineering techniques.
+- **Real-time Integration**: Integrate the model with a real-time data pipeline for continuous learning and prediction.
+
+## Conclusion
+This project demonstrates the end-to-end process of building a credit risk model using XGBoost, from data preprocessing and feature engineering to model training and evaluation. Future work will focus on deploying the model and enhancing its capabilities.
